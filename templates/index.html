@@ -3,6 +3,10 @@
     <head>
         <title>flask implementation</title>
         <style>
+            body {
+                background-color: black;
+                color: white
+            }
             h1 {
                 color:blue
             }
@@ -16,5 +20,10 @@
         {% else %}
             <h3>Your coin flip is TAILS</h3>
         {% endif %}
+
+        <form action="/hello">
+            <input type="text" name="name" id="name">
+            <input type="submit" value="name">
+        </form>
     </body>
 </html>
